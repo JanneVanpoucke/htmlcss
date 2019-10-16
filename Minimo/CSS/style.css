@@ -1,0 +1,83 @@
+/**BEGIN GENERAL CLASSES**/
+.d-flex{
+	display: flex
+}
+.flex-column{
+	flex-direction: column;
+}
+.flex-row{
+	flex-direction: row;
+}
+/* centreren van kindjes binnen de parent */
+.justify-content-end {
+	justify-content: flex-end;
+}
+.justify-content-center {
+	justify-content: center;
+}
+/* Children centreren zichzelf tov de parent */
+.align-items-center {
+	align-items: center;
+}
+.w-25 {
+	width: 25%
+}
+.w-50 {
+	width: 50%
+}
+.w-75 {
+	width: 75%
+}
+/**EINDE GENERAL CLASSES**/
+/**BEGIN WEBSITE**/
+
+body{
+	width: 1250px;
+	font-size: 15px;
+	color:#909090;
+	margin:0 /* (#px) */ auto; /* #body centrering */
+	position: relative;
+}
+/* BEGIN NAVIGATIE */
+nav{
+	height: 90px;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	background: #fff;
+	font-family: 'Playfair Display', serif;
+}
+#navbar{
+	list-style: none;
+	padding: 12px 100px 0px 0px;
+}
+#navbar div p{
+	font-style: 'Inconsolata', monospace;
+}
+#navbar li{
+	padding-right: 40px
+}
+#navbar li a{
+	text-decoration: none;
+	color:#6c6c6c;
+	font-size: 20px;
+
+	padding-bottom: 20px;
+}
+#navbar li a:hover{
+	border-bottom: 5px solid #5094f2;
+	color:#5094f2;
+}
+#brand{
+	margin-left: 140px;
+}
+#brand p{
+	font-size: 42px;
+	color: #000;
+	margin:0px;
+}
+#img-brand{
+	height: 44px;
+	margin-right: 15px;
+}
+/* EINDE NAVIGATIE */

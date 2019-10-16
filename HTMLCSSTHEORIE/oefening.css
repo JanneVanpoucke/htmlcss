@@ -1,0 +1,23 @@
+<body>
+	<h1>Homepage</h1>
+	<nav> /* 	<!-- #shortcut: nav>ul>li*7>a --> */
+		<ul>
+			<li><a href="contact.html">contact</a></li>
+			<li><a href="eenartikel.html">eenartikel</a></li>
+			<li><a href="imagemaps.html">imagemaps</a></li>
+			<li><a href="structuur.html">structuur</a></li>
+			<li><a href="tags.html">tags</a></li>
+			<li><a href="voetbalcompetitie.html">voetbalcompetitie</a></li>
+			<li><a href="formulieren.html">formulieren</a></li>
+		</ul>
+	</nav>
+
+	<div id="parent">/* <!--  #relatieve tag --> */
+
+	<div id="bloka"class="blok"></div>
+	<div id="blokb"class="blok"></div>
+	<div id="blokc"class="blok"></div>
+
+	</div>
+</body>
+</html>

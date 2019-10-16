@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dit is mijn eerste html5 pagina. Volledige theorie overzicht. Tutorial HTML5">
+	<meta name="author" content="Tom Vanhoutte, Full Stack Developer">
+	<meta name="keywords" content="HTML5, praktijk, theorie">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<link rel="icon" href="img/favicon.jpg" type="image/jpg" sizes="16x16">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i&display=swap" rel="stylesheet">
+	<style>
+		#internal{ /* #DEFINITION */
+			color:#456897;
+			font-size: 100px;
+			font-style: italic;
+			text-align: center;
+		}
+		.internalc{ /* #CLASS */
+			color:red; /* color: #456897; color:rgb(105,105,200); rgba(105,105,200,0.5) */
+			font-size: 100px;
+			font-style: italic;
+			text-align: center;	
+		}
+	</style>
+</head>
+<body>
+	<h1>Homepage</h1>
+	<nav> 	<!-- #shortcut: nav>ul>li*7>a -->
+		<ul>
+			<li><a href="contact.html">contact</a></li>
+			<li><a href="eenartikel.html">eenartikel</a></li>
+			<li><a href="imagemaps.html">imagemaps</a></li>
+			<li><a href="structuur.html">structuur</a></li>
+			<li><a href="tags.html">tags</a></li>
+			<li><a href="voetbalcompetitie.html">voetbalcompetitie</a></li>
+			<li><a href="formulieren.html">formulieren</a></li>
+		</ul>
+	</nav>
+
+	<div id="parent"><!--  #relatieve tag -->
+	<p style= "color:blue; font-size: 100px; font-style: italic; text-align: center">CSS3 INLINE STYLES</p>
+	<p id= "internal">CSS3 INTERNAL STYLES</p>
+	<p class="internalc">CSS3 INTERNAL STYLES. CLASSES> 1X</p>
+	<p class="internalc">ZELFDE STYLING> 1X</p>
+
+	<p id="external">Dit is externe en de enige juiste manier om te gaan stylen.</p>
+	<p class="nieuwelement">iets nieuws stylen</p>
+
+	<div id="bloka"class="blok"></div>
+	<div id="blokb"class="blok"></div>
+	<div id="blokc"class="blok"></div>
+	</div>
+</body>
+</html>

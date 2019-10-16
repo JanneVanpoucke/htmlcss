@@ -1,0 +1,50 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	width: 1250px;
+    margin: 0 auto;
+}
+
+
+
+#external{ /* #DEFINITION */
+			color:rgba(86,100,203,0.5);
+			font-size: 100px;
+			font-style: italic;
+			text-align: center;
+		}
+.nieuwelement{ /*#CLASS*/
+	color: green;
+    font-size: 33px;
+    font-style: italic;
+    text-decoration: underline;
+    background: orange;
+    width: 400px;
+    text-align: center;
+/*     padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px; */
+	/* padding:20px 15px 10px 5px; */
+	padding:50px 20px;
+}
+
+#bloka{
+	background: pink;
+	border-radius: 50%;
+	float:left;
+
+}
+#blokb{
+	background: grey;
+	border-radius: 50%;
+	float:left;
+}
+#blokc{
+	background:lightgreen;
+	border-radius: 50%;
+	float:right;
+}
+.blok{
+	height: 100px;
+	width: 100px;
+}
