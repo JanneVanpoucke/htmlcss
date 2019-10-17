@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tips&tricks</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		#breakout{
+			width:500px;
+			height: 300px;
+			margin:0 auto; /* #iets in het midden van je scherm zetten */
+			background:yellow;
+		}
+		.breakout{
+			width: 100vw;
+			position: relative; /* #hierdoor zitten we aan de linkerkant van ons scherm */
+			left: 50%;
+			right: 50%;
+			margin-left: -50vw;
+			margin-right: -50vw;
+			border:1px solid red; /* #overbodig */
+		}
+		#boxsizing{
+			width: 500px;
+			height: 500px;
+			padding:20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Tips and Tricks</h1>
+	<h2>BreakOut</h2>
+		<section id="breakout">
+			<p>breakout</p>
+			<div id="bloka">blok a</div>
+			<div id="blokb" class="breakout">blok b</div> <!-- #je laat het element uit het kader breken -->
+			<div id="blokc">blok c</div>
+		</section>
+	<h2>Box Sizing</h2>
+		<section id="boxsizing">
+			<p>Dit is inhoud</p>
+		</section>
+</body>
+</html>

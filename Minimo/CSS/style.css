@@ -1,6 +1,9 @@
 /**BEGIN GENERAL CLASSES**/
+*{
+	box-sizing: border-box;
+}
 .d-flex{
-	display: flex
+	display: flex;
 }
 .flex-column{
 	flex-direction: column;
@@ -15,6 +18,18 @@
 .justify-content-center {
 	justify-content: center;
 }
+.justify-content-between{
+	justify-content:space-between; /* #kan zorgen voor spaties tussen de navigatieelementen */
+}
+.justify-content-around{
+	justify-content: space-around;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+.flex-nowrap{
+	flex-wrap: nowrap;
+}
 /* Children centreren zichzelf tov de parent */
 .align-items-center {
 	align-items: center;
@@ -28,56 +43,92 @@
 .w-75 {
 	width: 75%
 }
+/* Typography */
+.upper{
+	text-transform: uppercase;
+}
+.lower{
+	text-transform: lowercase;
+}
+.capital{
+	text-transform: capitalize;
+}
+
 /**EINDE GENERAL CLASSES**/
 /**BEGIN WEBSITE**/
-
+@font-face{
+	font-family: PlayfairDisplay-Regular;
+	src:url(C:\HTMLCSS\Minimo\FONTS\Playfair_Display\PlayfairDisplay-Regular.ttf);
+}
 body{
-	width: 1250px;
-	font-size: 15px;
-	color:#909090;
+	width: 1062px;
 	margin:0 /* (#px) */ auto; /* #body centrering */
+	font-family: 'PlayfairDisplay-Regular', 'Arial'; /* #arial is je 'fallback' lettertype */
+	color:#626262;
+}
+header{
+	margin-top: 51px;
+}
+header p{
+	font-family:'Inconsolata', monospace;
+	font-size: 30px;
+	letter-spacing: 0.1cm;
+	width:46%;
+	color:black;
+}
+header nav{
+	width: 54%;
+}
+header nav ul{
+	list-style: none; /* #hiermee verwijder je de beginbolletjes van menu */
+	padding-left:0px;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#626262;
+	font-size:14px;
+	/* padding-right:106px; */
+}
+header nav ul li a:hover{
+	font-size:1rem; /* #rem:vergroten van lettertype */
+}
+/* header nav ul li a:last-child{ #last child is TRAVEL
+	padding-right: 0px; */
+/* } */
+#photodiaries article{
+		width: 35%;
+}
+#myarticles div{
+	flex:0 1 100%;
+	background: yellow;
 	position: relative;
+	right:50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	height: 525px;
+	border-bottom:120 px solid #fff; 
+	border-top:120 px solid #fff;
+}
+button, input{
+	background: none;
+	border:0px;
+}
+#email{
+		width:500px;
+		height: 300px;
+		margin:0 auto; /* #iets in het midden van je scherm zetten */
+		background:rgb(240,240,240);
 }
 /* BEGIN NAVIGATIE */
-nav{
-	height: 90px;
-	position: fixed;
-	z-index: 5;
-	width: 100%;
-	background: #fff;
-	font-family: 'Playfair Display', serif;
-}
-#navbar{
-	list-style: none;
-	padding: 12px 100px 0px 0px;
-}
-#navbar div p{
-	font-style: 'Inconsolata', monospace;
-}
-#navbar li{
-	padding-right: 40px
-}
-#navbar li a{
-	text-decoration: none;
-	color:#6c6c6c;
-	font-size: 20px;
 
-	padding-bottom: 20px;
-}
-#navbar li a:hover{
-	border-bottom: 5px solid #5094f2;
-	color:#5094f2;
-}
-#brand{
-	margin-left: 140px;
-}
-#brand p{
-	font-size: 42px;
-	color: #000;
-	margin:0px;
-}
-#img-brand{
-	height: 44px;
-	margin-right: 15px;
-}
 /* EINDE NAVIGATIE */
+
+.email{
+			width: 100vw;
+			position: relative; /* #hierdoor zitten we aan de linkerkant van ons scherm */
+			left: 50%;
+			right: 50%;
+			margin-left: -50vw;
+			margin-right: -50vw;
+			background:rgb(240,240,240);
+		}

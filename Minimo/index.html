@@ -3,59 +3,86 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Minimo</title>
-	<link rel="stylesheet" href="C:\Minimo\CSS\style.css">
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-	<link href="C:\Minimo\FONTS\Playfair_Display\PlayfairDisplay-Regular.ttf" rel="stylesheet">
+	<link rel="stylesheet" href="C:\HTMLCSS\Minimo\CSS\style.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<!-- HEADER BEGIN -->
-	<header>
-		<nav class="d-flex">
-			<div id="brand" class="d-flex align-items-center w-50"><!--  #deel 1 = kindje 1 -->
-				<h1>Minim&#216;</h1>
-			</div>
-			
-			<ul id="navbar" class="d-flex align-items-center w-50"> <!-- #verkort schrijven ul>li*4>a kindje 2 -->
-				<li><a href="#">Lifestyle</a></li>
-				<li><a href="#">Photodiary</a></li>
-				<li><a href="#">Music</a></li>
-				<li><a href="#">Travel</a></li>
+	<header class="d-flex align-items-center">
+		<p class="upper">minim&#216;</p>
+		<nav>
+		<!-- <img id="background" src="CSS/img/backgroundheader.png" alt="backgroundheader"> -->
+			<ul class="d-flex justify-content-between"> <!-- #verkort schrijven ul>li*4>a kindje 2 -->
+				<li class="upper"><a href="#">lifestyle</a></li>
+				<li class="upper"><a href="#">PHOTODIARY</a></li>
+				<li class="upper"><a href="#">MUSIC</a></li>
+				<li class="upper"><a href="#">TRAVEL</a></li>
 			</ul>	
 		</nav>
 	</header>
 	<!-- HEADER EINDE -->
-	<section>
-		<header>
-			<h2>Photodiary</h2>
+	<main>
+		<img src="C:\HTMLCSS\Minimo\CSS\img\background.png" alt="background">	
+		<h1 class="upper">photodiary</h1>
+		<section id="photodiaries">
+			<header>
+				<h2 class="upper">The perfect weekend getaway</h2>
+			</header>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magni, eos veritatis veniam! Provident voluptatem a, explicabo temporibus quibusdam omnis facere nisi aliquam inventore voluptate voluptas, dolorum libero hic aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, aut, cupiditate. Blanditiis sint, harum optio, vero ex autem perferendis officia amet, mollitia sit ipsum. Nisi quasi cum assumenda aut maxime.</p>
-		</header>
-		<div class="d-flex">
-		<article class="d-flex flex-column align-items-center">
-			<img id="image1" src="CSS/img/image1.png" alt="image1">
-			<h3>More than just a music festival</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, soluta eveniet. Eius ratione, eum quo qui aperiam, excepturi cumque libero, odio veniam eos, accusamus et blanditiis quas ducimus error. Explicabo.</p>
-		</article>
-		<article class="d-flex flex-column align-items-center">
-			<img id="image2" src="CSS/img/image2.png" alt="image2">
-			<h3>Life tastes better with coffee</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, soluta eveniet. Eius ratione, eum quo qui aperiam, excepturi cumque libero, odio veniam eos, accusamus et blanditiis quas ducimus error. Explicabo.</p>
-		</article>
-		<article class="d-flex flex-column align-items-center">
-			<img id="image3" src="CSS/img/image3.png" alt="image3">
-			<h3>American Dream</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, soluta eveniet. Eius ratione, eum quo qui aperiam, excepturi cumque libero, odio veniam eos, accusamus et blanditiis quas ducimus error. Explicabo.</p>
-		</article>
-		<article class="d-flex flex-column align-items-center">
-			<img id="image4" src="CSS/img/image4.png" alt="image4">
-			<h3>A day exploring the Alps</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, soluta eveniet. Eius ratione, eum quo qui aperiam, excepturi cumque libero, odio veniam eos, accusamus et blanditiis quas ducimus error. Explicabo.</p>
-		</article>
-		</div>
-		<div class="d-flex">
-			<article class="d-flex flex-column align-items-center">
-			<p>Sign up for our newsletter!</p>
-			</article>
-		</div>
-	</section>
+			<p class="upper leave-comment">leave a comment</p>
+			<div id="my articles" class="d-flex flex-wrap justify-content-around">
+				<article>
+					<img id="image1" src="CSS/img/image1.png" alt="image1">
+					<p class="upper category">lifestyle</p>
+					<h3 class="capital">More than just a music festival</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magni, eos veritatis veniam! Provident voluptatem a, explicabo temporibus quibusdam omnis facere nisi aliquam inventore voluptate voluptas, dolorum libero hic aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, aut, cupiditate. Blanditiis sint, harum optio, vero ex autem perferendis officia amet, mollitia sit ipsum. Nisi quasi cum assumenda aut maxime.</p>
+				</article>
+
+				<article>
+					<img id="image2" src="CSS/img/image2.png" alt="image2">
+					<p class="upper category">lifestyle</p>
+					<h3 class="capital">Life tastes better with coffee</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magni, eos veritatis veniam! Provident voluptatem a, explicabo temporibus quibusdam omnis facere nisi aliquam inventore voluptate voluptas, dolorum libero hic aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, aut, cupiditate. Blanditiis sint, harum optio, vero ex autem perferendis officia amet, mollitia sit ipsum. Nisi quasi cum assumenda aut maxime.</p>
+				</article>
+
+				<article>
+					<img id="image3" src="CSS/img/image3.png" alt="image3">
+					<p class="upper category">lifestyle</p>
+					<h3 class="capital">American Dream</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magni, eos veritatis veniam! Provident voluptatem a, explicabo temporibus quibusdam omnis facere nisi aliquam inventore voluptate voluptas, dolorum libero hic aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, aut, cupiditate. Blanditiis sint, harum optio, vero ex autem perferendis officia amet, mollitia sit ipsum. Nisi quasi cum assumenda aut maxime.</p>
+				</article>
+
+				<article>
+					<img id="image4" src="CSS/img/image4.png" alt="image4">
+					<p class="upper category">lifestyle</p>
+					<h3 class="capital">A day exploring the Alps</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magni, eos veritatis veniam! Provident voluptatem a, explicabo temporibus quibusdam omnis facere nisi aliquam inventore voluptate voluptas, dolorum libero hic aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, aut, cupiditate. Blanditiis sint, harum optio, vero ex autem perferendis officia amet, mollitia sit ipsum. Nisi quasi cum assumenda aut maxime.</p>
+				</article>
+
+			<div class="email" id="email" role="email">
+				<label for="">mijn email</label>
+				<input type="email" placeholder="tik hier uw email in"required>
+			</div>
+
+				<article>
+					<img id="image5" src="CSS/img/image5.png" alt="image5">
+					<p class="upper category">lifestyle</p>
+					<h3 class="capital">Top 10 songs for running</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magni, eos veritatis veniam! Provident voluptatem a, explicabo temporibus quibusdam omnis facere nisi aliquam inventore voluptate voluptas, dolorum libero hic aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, aut, cupiditate. Blanditiis sint, harum optio, vero ex autem perferendis officia amet, mollitia sit ipsum. Nisi quasi cum assumenda aut maxime.</p>
+				</article>
+
+				<article>
+					<img id="image6" src="CSS/img/image6.png" alt="image6">
+					<p class="upper category">lifestyle</p>
+					<h3 class="capital">Cold winter days</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magni, eos veritatis veniam! Provident voluptatem a, explicabo temporibus quibusdam omnis facere nisi aliquam inventore voluptate voluptas, dolorum libero hic aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, aut, cupiditate. Blanditiis sint, harum optio, vero ex autem perferendis officia amet, mollitia sit ipsum. Nisi quasi cum assumenda aut maxime.</p>
+				</article>
+			</div>
+		</section>
+	</main>
+	<footer>
+		
+	</footer>
 </body>
 </html>
