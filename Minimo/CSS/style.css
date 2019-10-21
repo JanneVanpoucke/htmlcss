@@ -98,6 +98,11 @@ header nav ul li a:hover{
 #photodiaries article{
 		width: 35%;
 }
+.smalltitles{
+	font-family: 'Ubuntu', serif;
+	font-size: 14px;
+	color: #b4ad9e;
+}
 #myarticles div{
 	flex:0 1 100%;
 	background: yellow;
@@ -119,9 +124,6 @@ button, input{
 		margin:0 auto; /* #iets in het midden van je scherm zetten */
 		background:rgb(240,240,240);
 }
-/* BEGIN NAVIGATIE */
-
-/* EINDE NAVIGATIE */
 
 .email{
 			width: 100vw;
@@ -130,5 +132,30 @@ button, input{
 			right: 50%;
 			margin-left: -50vw;
 			margin-right: -50vw;
-			background:rgb(240,240,240);
-		}
+}
+
+article div label{
+	font-family: PlayfairDisplay-Regular;
+	font-size: 30px;
+}
+
+.btn{
+	font-family: PlayfairDisplay-Regular;
+	background: white;
+	color:black;
+    padding: 12px 16px;
+    font-size: 22px;
+    font-weight: 300;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    padding-left: 16px;
+    right: 0px;
+    left: 0px;
+    top: 63px;
+
+}
+.btn:hover{
+	background: black;
+	color:white;
+}
