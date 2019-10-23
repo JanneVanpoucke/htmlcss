@@ -1,0 +1,234 @@
+/**BEGIN GENERAL CLASSES**/
+*{
+  box-sizing: border-box;
+}
+.d-flex{
+  display:flex;
+}
+.flex-column{
+  flex-direction:column;
+}
+.flex-row{
+  flex-direction:row;
+}
+/*centreren van children binnen de parent*/
+.justify-content-end{
+  justify-content:flex-end;
+}
+.justify-content-center{
+  justify-content:center;
+}
+.justify-content-between{
+  justify-content:space-between;
+}
+.justify-content-around{
+  justify-content:space-around;
+}
+.flex-wrap{
+  flex-wrap:wrap;
+}
+.flex-nowrap{
+  flex-wrap:nowrap;
+}
+.flex-grow-1{
+  flex-grow: 1;
+}
+/*children centreren zichzelf tov de parent*/
+.align-items-center{
+  align-items:center;
+}
+
+.w-25{
+  width:25%;
+}
+.w-50{
+  width:50%;
+}
+.w-75{
+  width:75%;
+}
+.w-100{
+  width:100%;
+}
+
+/*- Typography -*/
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+.capital{
+   text-transform: capitalize;
+}
+
+
+/**EINDE GENERAL CLASSES**/
+
+/**BEGIN WEBSITE**/
+@font-face {
+  font-family: segoeui;
+  src: url('../assets/fonts/Segoe UI.woff');
+}
+@font-face{
+  font-family: segoeuiitalic;
+  src:url('../assets/fonts/Segoe UI Italic.woff');
+}
+@font-face{
+  font-family: segoeuibold;
+  src:url('../assets/fonts/Segoe UI Bold.woff');
+}
+@font-face{
+  font-family: segoeuibolditalic;
+  src:url('../assets/fonts/Segoe UI Bold Italic.woff');
+}
+@font-face{
+  font-family: segoeuilight;
+  src:url('../assets/fonts/Segoe UI Light.ttf');
+}
+
+body{
+  width:1920px; /**breedte van uw website**/
+  /*2de mogelijkheid voor breedte*/
+  /*max-width:1920px;
+  width:100%;*/
+  /* centreren van de website binnen de view-width van het device
+  0 = top en bottom (bovenkant en onderkant scherm 0 pixels)
+  auto= zorgt voor de x-as, nl. links en rechts automatisch ruimte voorzien
+  */
+  margin:0 auto;
+  /*height:200px;
+  background:linear-gradient(to right bottom, red, yellow) no-repeat;*/  
+}
+#bgheader{
+  height:800px;
+  background: url('../assets/img/background.png') no-repeat top center;
+}
+nav{
+  height:148px;
+  width:100%;
+  background:rgba(53,63,70,0.85);
+
+}
+#brandnav, #servicescontent{
+    width:1175px;
+    margin:0 auto;
+    color:#fff;
+}
+#brandnav{
+     font-family: segoeuibold;
+}
+#brandnav p{ 
+    font-size:30px; 
+    margin-right: auto;
+}
+#brandnav p span{
+  color:#4bb1dd;
+}
+#brandnav ul{
+    list-style:none;/*bullets verwijderen OP UL!!!**/
+}
+#brandnav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    padding:12px 18px;
+
+}
+#brandnav ul > li > a:hover{
+  /* border:1px solid #4bb1dd;*/
+
+   border-color:#4bb1dd;
+   /*border-top:1px solid #4bb1dd;
+   border-bottom:1px solid #4bb1dd;*/
+   color:#4bb1dd;
+}
+#brandnav li:not(:last-child){
+    margin-right:9px;
+}
+#slidertekst{
+  height:652px;
+}
+#title, #subtitle{
+  font-size:42px;
+  color:#fff;
+  font-family: segoeuilight;
+   font-weight:100;
+   text-align:center;
+   background:#48535a;
+}
+#title{
+  margin-bottom:0px;
+}
+#subtitle{
+  margin-top:20px;
+}
+
+#h1home{
+  display:none;
+}
+#services{
+  height:404px;
+  background:#4bcaff;
+  font-family: segoeuibold;
+}
+#services h2, #justdefault h2{
+   font-family: segoeuilight;
+   font-size:30px;
+   font-weight: 100;
+   margin-bottom:0px;
+   margin-top:0px;
+}
+#servicescontent{
+  height:250px;
+}
+.divider{
+  width:50px;
+  border-bottom:1px solid #fff;
+}
+#servicesarticles{
+  margin-top:40px;
+}
+.articlestext{
+  padding-right:30px;
+}
+#justdefault{
+  height:583px;
+  background:#48535a;
+}
+#justdefaultcontent{
+  width:1302px;
+  height:350px;
+  margin-left:372px;
+  color:#fff;
+}
+#justdefaultcontent h2{
+  padding-left:25px;
+}
+#justdefaultcontent p{
+  margin-right:auto;
+  margin-top:75px;
+  font-family: segoeui;
+  /*padding-right:275px;*/
+  width:460px;
+}
+#brandnav ul{
+  position:relative;
+}
+#brandnav ul ul{
+  display:none;
+  position:absolute;
+  top:55px;
+
+}
+#brandnav ul li:hover > ul {
+  display:block;
+color:#4bb1dd;
+
+}
+#homeul{
+left:0px;
+}
+#servicesul{
+left:90px;
+}

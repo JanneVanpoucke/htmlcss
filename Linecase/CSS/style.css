@@ -1,0 +1,141 @@
+/**BEGIN GENERAL CLASSES**/
+*{
+  box-sizing: border-box;
+}
+.d-flex{
+  display:flex;
+}
+.flex-column{
+  flex-direction:column;
+}
+.flex-row{
+  flex-direction:row;
+}
+/*centreren van children binnen de parent*/
+.justify-content-end{
+  justify-content:flex-end;
+}
+.justify-content-center{
+  justify-content:center;
+}
+.justify-content-between{
+  justify-content:space-between;
+}
+.justify-content-around{
+  justify-content:space-around;
+}
+.flex-wrap{
+  flex-wrap:wrap;
+}
+.flex-nowrap{
+  flex-wrap:nowrap;
+}
+.flex-grow-1{
+  flex-grow: 1;
+}
+/*children centreren zichzelf tov de parent*/
+.align-items-center{
+  align-items:center;
+}
+
+.w-25{
+  width:25%;
+}
+.w-50{
+  width:50%;
+}
+.w-75{
+  width:75%;
+}
+.w-100{
+  width:100%;
+}
+
+/*- Typography -*/
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+.capital{
+   text-transform: capitalize;
+}
+
+
+/**EINDE GENERAL CLASSES**/
+/**BEGIN WEBSITE**/
+body{
+  width: 1500px;
+  margin:0 auto; /* margin */ /* 0 wil zeggen dat je nergens ruimte rondom wil overzetten. Links en rechts is auto */
+  font-family: 'Georgia';
+}
+/* Begin header */
+#backgroundheader{
+  height: 645px;
+  background: url(C:\HTMLCSS\Linecase\assets\linecasebackground.png) no-repeat;
+}
+#headercontent{
+  width:945px;
+  margin:0 auto;
+}
+#illustrator{
+  margin-top: 140px;
+  margin-bottom:40px;
+}
+#linecase{
+  margin-top:40px;
+}
+#headercontentleft p{
+  color:rgba(255,255,255,0.5);
+  font-style: italic;
+  font-size: 20px;
+  width:645px; 
+}
+#dude{
+  margin-top:30px;
+}
+/* einde header */
+/* begin main
+begin section 1 */
+h1{
+  display: none;
+}
+h2{
+  font-family: 'Sintony', sans-serif;
+  color:#00aeef;
+  font-size: 30px;
+  font-weight:100px;
+}
+main{
+  margin-left: 275px;
+}
+.headertoptext{
+  width:750px;
+}
+.kader{
+  width:190px;
+  height:150px;
+  background:#abbcc3;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+.headermiddle{
+  width:1500px;
+}
+.bolleeg{
+  width:16px;
+  height:16px;
+  background:#fff;
+  border-radius: 50%;
+  border:4px solid color:#00aeef;
+  margin-right: 8px;
+}
+.bolvol{
+  width:16px;
+  height:16px;
+  background:#00aeef;
+  border-radius: 50%;
+  border:4px solid color:#fff;
+  margin-right: 8px;
+}
