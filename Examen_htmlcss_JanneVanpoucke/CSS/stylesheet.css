@@ -1,0 +1,251 @@
+/**BEGIN GENERAL CLASSES**/
+*{
+  box-sizing: border-box;
+}
+.d-flex{
+  display:flex;
+}
+.flex-column{
+  flex-direction:column;
+}
+.flex-row{
+  flex-direction:row;
+}
+/*centreren van children binnen de parent*/
+.justify-content-end{
+  justify-content:flex-end;
+}
+.justify-content-center{
+  justify-content:center;
+}
+.justify-content-between{
+  justify-content:space-between;
+}
+.justify-content-around{
+  justify-content:space-around;
+}
+.flex-wrap{
+  flex-wrap:wrap;
+}
+.flex-nowrap{
+  flex-wrap:nowrap;
+}
+.flex-grow-1{
+  flex-grow: 1;
+}
+/*children centreren zichzelf tov de parent*/
+.align-items-center{
+  align-items:center;
+}
+
+.w-25{
+  width:25%;
+}
+.w-50{
+  width:50%;
+}
+.w-75{
+  width:75%;
+}
+.w-100{
+  width:100%;
+}
+
+/*- Typography -*/
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+.capital{
+   text-transform: capitalize;
+}
+
+
+/**EINDE GENERAL CLASSES**/
+/**BEGIN WEBSITE**/
+@font-face {
+  font-family: latoblack;
+  src: url('../CSS/Lato-Black.ttf');
+}
+@font-face{
+  font-family: latoblackitalic;
+  src:url('../CSS/Lato-BlackItalic.ttf');
+}
+@font-face{
+  font-family: latoitalic;
+  src:url('../CSS/Lato-Italic.ttf');
+}
+@font-face{
+  font-family: latolight;
+  src:url('../CSS/Lato-Light.ttf');
+}
+@font-face{
+  font-family: latolightitalic;
+  src:url('../CSS/Lato-LightItalic.ttf');
+}
+@font-face{
+  font-family: latoregular;
+  src:url('../CSS/Lato-Regular.ttf');
+}
+body{
+  width:1600px; /**breedte van uw website**/
+  /*2de mogelijkheid voor breedte*/
+  /*max-width:1920px;
+  width:100%;*/
+  /* centreren van de website binnen de view-width van het device
+  0 = top en bottom (bovenkant en onderkant scherm 0 pixels)
+  auto= zorgt voor de x-as, nl. links en rechts automatisch ruimte voorzien
+  */
+  margin:0 auto;
+  /*height:200px;
+  background:linear-gradient(to right bottom, red, yellow) no-repeat;*/ 
+}
+#bgheader{
+  height:494px;
+  background:#2a2a2a no-repeat top center;
+}
+nav{
+  height:100px;
+  width:100%;
+  background:#262626;
+}
+#brandnav, #servicescontent{
+    width:1110px;
+    margin:0 auto;
+    color:#d9d9d9;
+}
+#img-brand{
+  height:33px;
+  width:106px;
+}
+#brandnav{
+     font-family: latoblack;
+     font-size:13px;
+}
+#brandnav ul{
+    list-style:none;/*bullets verwijderen OP UL!!!**/
+    margin-left: 533px;
+}
+#brandnav ul li a{
+    text-decoration:none;
+    color:#d9d9d9;
+    font-size:13px;
+    padding:12px 18px;
+}
+#brandnav ul > li > a:hover{
+   border-color:#ea6660;
+   color:#ea6660;
+}
+#brandnav li:not(:last-child){
+    margin-right:9px;
+}
+#slidertekst{
+  height:391px;
+}
+#title, #subtitle{
+  color:#d9d9d9;
+  font-family: latolight;
+  font-weight:100;
+  text-align:center;
+}
+#title{
+  font-size:60px;
+  margin-bottom:0px;
+}
+#title span{
+  font-family: latoblack;
+}
+#subtitle{
+  font-size:40px;
+  margin-top:20px;
+}
+#subtitle span{
+  font-family: latolightitalic;
+}
+.btn{
+  font-family: latoblack;
+  background: #ea6660;
+  color:#d9d9d9;
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#h1home{
+  display:none;
+}
+#services{
+  height:368px;
+  background:#f8f8f8;
+  font-family: latoregular;
+
+}
+#smlheader{
+  display:none;
+}
+
+#servicescontent{
+  height:250px;
+}
+
+#servicesarticles{
+  margin-top:40px;
+}
+.articlestext{
+  padding-right:30px;
+  color:#616161;
+  font-family: latoregular;
+  text-align: center;
+}
+h3{
+  font-family: latoblack;
+  text-align:center;
+  color:#616161;
+}
+#ourfeatureworks{
+  height:1005px;
+  background:#ffffff;
+}
+#ourfeatureworkscontent{
+  width:1600px;
+  height:866px;
+  margin-left:242px;
+  color:#616161;
+}
+#ourfeatureworkscontent h2{
+/*   padding-left:25px; */
+  text-align: center;
+  font-family: latoblack;
+  font-size:30px;
+}
+#ourfeatureworkscontent p{
+/*   margin-right:auto;
+margin-top:75px; */
+  font-family: latolight;
+  font-size: 20px;
+  text-align: center;
+  /*padding-right:275px;*/
+/*   width:460px; */
+}
+
+#brandnav ul{
+  position:relative;
+}
+#brandnav ul ul{
+  display:none;
+  position:absolute;
+  top:55px;
+
+}
+#brandnav ul li:hover > ul {
+  display:block;
+color:#4bb1dd;
+
+}
