@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lightbox</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+
+
+</head>
+<body>
+
+<a href="images/image1.jpg" data-lightbox="roadtrip">Image #2</a>
+<a href="images/image2.jpg" data-lightbox="roadtrip">Image #3</a>
+<a href="images/image3.jpg" data-lightbox="roadtrip">Image #4</a>
+
+<a href="images/image1.jpg" data-lightbox="random" data-title="pulp fiction">Image #2</a>
+<a href="images/image2.jpg" data-lightbox="random" data-title="alter ego Pieter">Image #3</a>
+<a href="images/image3.jpg" data-lightbox="random" data-title="The Simpsons">Image #4</a>
+
+<script src="js/lightbox-plus-jquery.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+    lightbox.option({
+        resizeDuration:5000,
+
+    })
+</script>
+</body>
+</html>

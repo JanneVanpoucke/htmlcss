@@ -1,0 +1,12 @@
+.box{
+    width:200px;
+    border:1px solid #000;
+    padding: 18px;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.6s linear;
+}
+.color{
+    background-color: purple;
+    color:white;
+}
