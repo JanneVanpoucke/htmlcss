@@ -1,0 +1,40 @@
+/*Variabelen in scss*/
+$red: red;
+$raleway-font: 'Raleway', 'Arial';
+
+.text-red{
+  color:$red !important;
+}
+//*Nesten van css*//
+nav{}
+nav ul{}
+nav ul li{}
+nav{
+  font:$raleway-font;
+  ul{
+    list-style:none;
+  }
+  li{
+    a{
+      text-decoration: none;
+      span{
+
+      }
+    }
+  }
+}
+/*mixins*/
+@mixin set-font($family: 'Arial', $weight:400,$style:italic){
+  font-family: $family, 'Helvetica', 'sans-serif';
+  font:$style;
+  weight:$weight;
+}
+
+h1{
+  @include set-font;
+  color:$blue;
+
+}
+h2{
+
+}

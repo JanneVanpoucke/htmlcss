@@ -1,0 +1,11 @@
+body{
+    width: 1250px;
+ /*   margin:0 auto;*/
+}
+#logo{
+    height:90px;
+}
+.navbar-brand{
+    font-size: 42px;
+    color: black;
+}
