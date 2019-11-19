@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Stappenplan Bootstrap</title>
+</head>
+<body>
+    <header class="container">
+        <h1>Dit is stappenplan Bootstrap</h1>
+
+    </header>
+    <main>
+
+        <section class="container-fluid">
+            <h2>Dit is mijn container fluid</h2>
+        </section>
+        <section id="tutorial" class="mx-auto">
+            <h2>Tutorial fixed container</h2>
+        </section>
+        <section class="container">
+            <h2>Vaste container</h2>
+        </section>
+        <header>
+            <div class="container"> <!--Tussen div's zetten zorgt ervoor dat je navigatiebar in een row zit-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light row">
+                    <div class="col-lg-2"> <!--Vanaf de grootte van 'lg'-scherm (die resolutie), ga je 2 kolommen voorzien voor deze div-->
+                        <a class="navbar-brand" href="#">MINIMO</a>
+                    </div>
+                    <div class="col-lg-10"> <!--Vanaf de grootte van 'lg'-scherm (die resolutie), ga je 10 kolommen voorzien voor deze div-->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div> <!--id=navbarnav hangt vast met data-target=#navbarnav. Je kan dus ook meerdere hamburgermenuutjes op een pagina zetten-->
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+                    <a class="navbar-brand" href="#">MINIMO</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="articles" class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="row">
+                        <article class="col-lg-6">
+                            <header>
+                                <img class="img-fluid"src="http://placekitten.com/800/600" alt="">
+                                <h3>Katje 1</h3>
+                            </header>
+                        <p>Dit is article tekst</p>
+                        </article>
+                        <article class="col-lg-6">
+                            <header>
+                                <img class="img-fluid"src="http://placekitten.com/800/600" alt="">
+                                <h3>Katje 2</h3>
+                            </header>
+                            <p>Dit is article tekst</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

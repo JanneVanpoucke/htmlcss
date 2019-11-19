@@ -1,0 +1,16 @@
+.container{
+  background: yellow;
+  height: 100px;
+}
+.container-fluid{
+  background: orange;
+  height: 100px;
+}
+#tutorial{ /*Hier zet je zelf je schermbreedte*/
+  width: 1250px;
+  height: 100px;
+  background: blue;
+  /*margin: 0 auto; Hiermee zet je iets in het midden - tegenhanger die hetzelfde doet in html is class="mx-auto"*/
+}
+
+
