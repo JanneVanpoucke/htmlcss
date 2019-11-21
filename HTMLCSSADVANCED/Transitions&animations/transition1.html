@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition 1</title>
+    <style>
+        body{
+            background-color: thistle;
+        }
+        button{
+            display: block;
+            width:60%;
+            padding:10px;
+            margin:50px auto;
+            border:none;
+            cursor:pointer; /*Handje*/
+            color: #font-family: fantasy;
+            background-color: seagreen;
+            /**transition**/
+            transition-property: background-color; /*De transition die we zillen wordt uitgevoerd op de achtergrondkleur van de hover*/
+            transition-duration: 500ms; /*500miliseconden*/
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<button>transition 01</button>
+</body>
+</html>

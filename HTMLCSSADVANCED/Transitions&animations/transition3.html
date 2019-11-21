@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition 3</title>
+    <style>
+        body{
+            background-color: thistle;
+        }
+        .container{
+            margin:10px;
+            padding:30px;
+            background-color: #fff;
+        }
+        .box{
+            padding: 10px;
+            background-color: mediumpurple;
+            color: #fff;
+            width: 80px;
+            margin:20px;
+            position: relative;
+            left:0;
+            /**transition**/
+/*            transition-property: left; !*Aanvulling van een hover*!
+            transition-duration: 1s;*/
+            transition-transform:0.3s;
+        }
+        .box p{
+            text-align: center;
+            line-height: 50px;
+        }
+        .container:hover.box{
+            left:50%; /*effect:box zal 80% naar rechts gaan*/
+            transform:rotate(x3);
+        }
+        #ease{
+            transition-timing-function: ease;
+        }
+        #linear{
+            transition-timing-function: linear;
+        }
+        #ease-in{
+            transition-timing-function: ease-in;
+        }
+        #ease-out{
+            transition-timing-function: ease-out;
+        }
+        #ease-in-out{
+            transition-timing-function: ease-in-out;
+        }
+        #cubic-bezier{
+            transition-timing-function: cubic-bezier(.03,.9,.97,-0.08);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="ease"><p>EASE</p></div>
+    <div class="box" id="linear"><p>LINEAR</p></div>
+    <div class="box" id="ease-in"><p>EASE-IN</p></div>
+    <div class="box" id="ease-out"><p>EASE-OUT</p></div>
+    <div class="box" id="ease-in-out"><p>EASE-IN-OUT</p></div>
+    <div class="box" id="cubic-bezier"><p>cubic-bezier</p></div>
+</div>
+</body>
+</html>

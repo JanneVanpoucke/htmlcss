@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition 3</title>
+    <style>
+        body{
+            background-color: thistle;
+        }
+        .container{
+          perspective: 800px;
+        }
+        .box{
+            padding: 10px;
+            height: 200px;
+            width: 50%;
+            margin:50px auto;
+            background-size: cover;
+            border:5px solid #fff;
+            background: url("background.jpg") no-repeat;
+
+            /**transition**/
+/*            transition-property: left; !*Aanvulling van een hover*!
+            transition-duration: 1s;*/
+            transition-transform:0.3s;
+        }
+
+        }
+        .box:hover{
+            left:50%; /*effect:box zal 80% naar rechts gaan*/
+            transform:rotateX(180deg);
+
+        }
+        .front{
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            background-color:rebeccapurple ;
+            backface-visibility: hidden;
+            transform:rotateX(0)
+        }
+        .back{
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            background-color:teal ;
+            backface-visibility: hidden;
+            transform:rotateX(180)
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="box" id="ease">
+        <div class="front">
+            voorkant
+        </div>
+        <div class="back">
+            achterkantkant
+        </div>
+    </div>
+</div>
+</body>
+</html>

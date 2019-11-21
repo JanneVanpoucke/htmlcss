@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition 5</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            /**short hand notatie**/
+            transition-property: height,width,background;
+            transition-delay: 0s,0s,4s;
+            transition-duration: 1s,3s,5s;
+            transition-timing-function: ease-out,cubic-bezier(1,-0.9,.25,0.77);
+            /*transition:height 1s ease-out,width 3s cubic-bezier(1,-0.9,.25,0.77);*/
+        }
+        .box:hover{
+            height: 400px;
+            width: 600px;
+            background: linear-gradient(to left,white, red);
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+
+</div>
+</body>
+</html>

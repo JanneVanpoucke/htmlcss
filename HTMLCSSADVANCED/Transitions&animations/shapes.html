@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition 2</title>
+    <style>
+        body{
+            background-color: thistle;
+        }
+        .triangle-up{
+            width: 0px;
+            height:0px;
+            border-left:25px solid transparent;
+            border-left:25px solid transparent;
+            transition-property: width;
+            transition-duration: 500ms;
+            transition-delay: 2s; /*2s wachten vooraleer de animatie uitgevoerd wordt*/
+        }
+        .triangle-down{
+                    width: 0px;
+                    height:0px;
+                    border-left:25px solid transparent;
+                    border-left:25px solid transparent;
+                    transition-property: width;
+                    transition-duration: 500ms;
+                    transition-delay: 2s; /*2s wachten vooraleer de animatie uitgevoerd wordt*/
+                }
+         .burst{
+         background:rgb(246,156,85);
+         width: 40px;
+         height:40px;
+         position:relative;
+         text-align:center;
+         transform:rotate(45deg);
+         box-shadow:0 0 20px #000;
+         }
+         .burst:before{
+         content:'';
+         position:absolute;
+         top:0;
+         left:0;
+         width:40px;
+         background:rgb(246,156,85);
+         transform:rotate(20deg);
+         }
+         .cube{
+         background:#dc2e2e;
+         width:100px;
+         height:100px;
+         position:relative;
+         margin:50px;
+         }
+        .cube:before{
+         content:'';
+         display:inline-block;
+         background:#f15757
+         width:100px;
+         height:20px;
+         transform:skewX(-40deg);
+         position:absolute;
+         top:-20px;
+         left:8px; /**moet je doen omdat de skew ervoor zorgt dat hij orgineel naar positie v -8 springt**/}
+
+        .cube:after{
+                  content:'';
+                  display:inline-block;
+                  background:#9e1515
+                  width:16px;
+                  height:100px;
+                  transform:skewY(-50deg);
+                  position:absolute;
+                  top:-10px;
+                  left:100%;
+}
+.polygon{
+width:200px;
+height:200px;
+background:teal;
+clip-path:polygon(0 0,0 100%,100% 50%);
+}
+.mask{
+width:200px;
+height:200px;
+background:url(background.jpg);
+mask-image:radial-gradient(circle farthest-side at center, transparent 49%,white 50%)} /**juiste code ophalen met auto prefixer css**/
+.irregularshape{
+width:800px;
+height:600px;
+background:url(background.jpg);
+/**mask-image:linear-gradient(to top right, transparent 49.5%, white 50.5%),
+linear-gradient(to top right, transparent 49.5%, white 50.5%),linear-gradient(white,white):**/
+-webkit-mask-image:-webkit-gradient(linear, left bottom, right top, color-stop(49.5%, transparent), color-stop(50.5%, white)),
+-webkit-gradient(linear, left bottom, right top, color-stop(49.5%, transparent), color-stop(50.5%, white)),-webkit-gradient(linear,left top, left bottom,from(white),to(white));-webkit-mask-image:linear-gradient(to top right, transparent 49.5%, white 50.5%),
+linear-gradient(to top right, transparent 49.5%, white 50.5%),linear-gradient(white,white);mask-image:-webkit-gradient(linear, left bottom, right top, color-stop(49.5%, transparent), color-stop(50.5%, white)),
+-webkit-gradient(linear, left bottom, right top, color-stop(49.5%, transparent), color-stop(50.5%, white)),-webkit-gradient(linear,left top, left bottom,from(white),to(white));mask-image:linear-gradient(to top right, transparent 49.5%, white 50.5%),
+linear-gradient(to top right, transparent 49.5%, white 50.5%),linear-gradient(white,white)
+mask-size:75% 25%, 25% 25%, 100% 75%
+mask-position:bottom left, bottom right, top left;
+mask-repeat:no-repeat;
+
+}
+
+
+    </style>
+</head>
+<body>
+<div class="triangle-up"></div>
+<br>
+<div class="triangle-down"></div>
+<br>
+<div class="burst"></div>
+
+<div class="cube"></div>
+
+<div class="polygon"></div>
+<div class="mask"></div>
+<div class="irregularshape"></div>
+
+
+</body>
+</html>

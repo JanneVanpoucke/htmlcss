@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition 4</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        button{
+            display: block;
+            width:60%;
+            padding:10px;
+            margin:50px auto;
+            cursor:pointer; /*Handje*/
+            color: aquamarine;
+            background-color: seagreen;
+            border: 7px solid yellow;
+            /**transition**/
+            transition-property: background-color,border-color,color; /*De transition die we zillen wordt uitgevoerd op de achtergrondkleur van de hover*/
+            transition-duration: 1s,2s,1s; /*500miliseconden*/
+            transition-delay: 0s,1s,2s;
+        }
+        button:hover{
+            background-color: rgba(255,255,255,0.5);
+            border-color: green;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<button>transition 04</button>
+</body>
+</html>

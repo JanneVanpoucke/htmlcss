@@ -1,0 +1,52 @@
+/**BEGIN GENERAL CLASSES**/
+.d-flex{
+    display: flex
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+/* centreren van kindjes binnen de parent */
+.justify-content-end {
+    justify-content: flex-end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+/* Children centreren zichzelf tov de parent */
+.align-items-center {
+    align-items: center;
+}
+.w-25 {
+    width: 25%
+}
+.w-50 {
+    width: 50%
+}
+.w-75 {
+    width: 75%
+}
+
+/**EINDE GENERAL CLASSES**/
+.btn {
+    background: white;
+    color: black;
+    padding: 12px 16px;
+    font-size: 22px;
+    font-weight: 300;
+    border: 1px solid black;
+    cursor: pointer;
+    padding-left: 16px;
+    right: 0px;
+    left: 0px;
+    top: 63px;
+}
+.tekst{
+    width:200px;
+    border:1px solid #000;
+    padding: 18px;
+    text-align: center;
+    margin: 0 auto;
+}

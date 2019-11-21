@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: thistle;
+        }
+
+        .box{
+            position: relative;
+            height: 200px;
+            width: 50%;
+            background-color: teal;
+            margin: 80px auto;
+            border:5px solid #fff;
+            /**animation**/
+            animation-name: anim;
+            animation-duration: 2s;
+/*            animation-iteration-count: infinite ; !**loop**!
+            animation-direction: alternate-reverse; !**richting**!
+            animation-timing-function: linear;
+            animation-play-state: paused;*/
+            animation-fill-mode: forwards;
+        }
+        .box:hover{
+            animation-play-state: running;
+        }
+@keyframes anim {
+    0% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(150px);
+    }
+}
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box"></div>
+
+</body>
+</html>
