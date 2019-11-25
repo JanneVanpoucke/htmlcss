@@ -1,0 +1,199 @@
+//font-family: 'Montserrat', sans-serif;
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.nav-link:hover{
+  border: white !important;
+  border-radius: 50%;
+}
+.navbar-brand{
+  padding-left: 15%;
+  color:#fff !important;
+}
+.navbar-nav{
+  margin-left: 53%;
+}
+.nav-link {
+  color: #fff !important;
+  border:none;
+}
+.nav-item:hover {
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+#blokeen{
+  background-image:url("../img/backgroundheader.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color:#fff !important;
+}
+#titel1{
+  color:#fff;
+  margin-top: 298px;
+  font-weight: bold;
+}
+#tussenteksteen{
+  font-weight:lighter;
+}
+#knoppendeeleen{
+  margin-top: 62px;
+  margin-left:50px;
+}
+.btn{
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.btnblauw{
+  color: #fff;
+  border: 1px solid #274799;
+  border-radius: 50%;
+  background: #274799;
+}
+#knopeen{
+  color:#d33016;
+  background: #fff;
+}
+#knoptwee{
+  margin-left: 36px;
+}
+#bloktwee{
+  background: #f6f6f6;
+}
+#blokdrie{
+  background: white;
+  background-image:url("../img/droneblok3.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#blokvier{
+  background: #f6f6f6;
+}
+#blokvijf{
+  height: 603px;
+}
+#blokzes{
+  background: white;
+}
+.title{
+  color: #d94612;
+}
+.tekst{
+  color:#5e6372;
+}
+.teksttwee{
+  color:#adb2c0;
+}
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+  .nav-link:hover{
+    border: white !important;
+    border-radius: 50%;
+  }
+  .navbar-brand{
+    padding-left: 15%;
+    color:#fff !important;
+  }
+  .navbar-nav{
+    margin-left: 53%;
+  }
+  .nav-link {
+    color: #fff !important;
+    border:none;
+  }
+  .nav-item:hover {
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+
+  #blokeen{
+    height:1080px;
+    background-image:url("../img/backgroundheader.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#fff !important;
+  }
+  #titel1{
+    color:#fff;
+    margin-top: 298px;
+    font-weight: bold;
+  }
+  #tussenteksteen{
+    font-weight:lighter;
+  }
+  #knoppendeeleen{
+    margin-top: 62px;
+    margin-left:50px;
+  }
+  .btn{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  .btnblauw{
+    color: #fff;
+    border: 1px solid #274799;
+    border-radius: 50%;
+    background: #274799;
+  }
+  #knopeen{
+    color:#d33016;
+    background: #fff;
+  }
+  #knoptwee{
+    margin-left: 36px;
+  }
+  #bloktwee{
+    height: 600px;
+    background: #f6f6f6;
+  }
+  #blokdrie{
+    height: 688px;
+    background: white;
+    background-image:url("../img/droneblok3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  #blokvier{
+    height: 1772px;
+    background: #f6f6f6;
+  }
+  #blokvijf{
+    height: 603px;
+  }
+  #blokzes{
+    height: 396px;
+    background: white;
+  }
+  .title{
+    color: #d94612;
+  }
+  .tekst{
+    color:#5e6372;
+  }
+  .teksttwee{
+    color:#adb2c0;
+  }
+}
+
+

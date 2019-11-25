@@ -6,34 +6,104 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <title>Opdracht Javascript</title>
 </head>
 <body>
-<div>
-        <button type="input" value="text" class="btn tekst">Input tekst</button>
-<!--        <button type="button" value="button" class="btn">Checkbox</button>
-        <button type="button" value="button" class="btn">Color</button>
-        <button type="button" value="button" class="btn">Datetime-Local</button>
-        <button type="button" value="button" class="btn">Date</button>
-        <button type="button" value="button" class="btn">Email</button>
-        <button type="button" value="button" class="btn">File</button>
-        <button type="button" value="button" class="btn">Image</button>
-        <button type="button" value="button" class="btn">Month</button>
-        <button type="button" value="button" class="btn">Number</button>
-        <button type="button" value="button" class="btn">Password</button>
-        <button type="button" value="button" class="btn">Radio</button>
-        <button type="button" value="button" class="btn">Range</button>
-        <button type="button" value="button" class="btn">Search</button>
-        <button type="button" value="button" class="btn">Time</button>
-        <button type="button" value="button" class="btn">URL</button>
-        <button type="button" value="button" class="btn">Week</button>
-        <button type="button" value="button" class="btn">Tel</button>-->
-</div>
+    <header>
+        <h1>Formcodegenerator</h1>
+    </header>
+    <main class="row">
+        <div class="column">
+            <h2>Welke elementen wil je in je formulier</h2>
+            <div>
+                <button type="submit" id="inputtext" class="btn">Tekst invoeren</button>
+            </div>
+            <div>
+                <button type="submit" id="checkbox" class="btn">Checkbox</button>
+            </div>
+            <div>
+                <button type="submit" id="color" class="btn">Kleur</button>
+            </div>
+            <div>
+                <button type="submit" id="datetimelocal" class="btn">Lokale datum en tijd</button>
+            </div>
+            <div>
+                <button type="submit" id="date" class="btn">Datum</button>
+            </div>
+            <div>
+                <button type="submit" id="email" class="btn">Email</button>
+            </div>
+            <div>
+                <button type="submit" id="file" class="btn">File</button>
+            </div>
+            <div>
+                <button type="submit" id="image" class="btn">Afbeelding</button>
+            </div>
+            <div>
+                <button type="submit" id="month" class="btn">Maand</button>
+            </div>
+            <div>
+                <button type="submit" id="number" class="btn">Nummer</button>
+            </div>
+            <div>
+                <button type="submit" id="password" class="btn">Paswoord</button>
+            </div>
+            <div>
+                <button type="submit" id="radio" class="btn">Radioknop</button>
+            </div>
+            <div>
+                <button type="submit" id="range" class="btn">Range</button>
+            </div>
+            <div>
+                <button type="submit" id="search" class="btn">zoeken</button>
+            </div>
+            <div>
+                <button type="submit" id="time" class="btn">Tijd</button>
+            </div>
+            <div>
+                <button type="submit" id="url" class="btn">URL</button>
+            </div>
+            <div>
+                <button type="submit" id="week" class="btn">Week</button>
+            </div>
+            <div>
+                <button type="submit" id="tel" class="btn">Telfoonnummer</button>
+            </div>
+            <div>
+                <button type="submit" id="textarea" class="btn">Tekstvak</button>
+            </div>
+            <div>
+                <button type="submit" id="select" class="btn">selectvak met opties</button>
+            </div>
+            <div>
+                <button type="submit" id="submit" class="btn">Verstuur</button>
+            </div>
+        </div>
 
-<script src="js/jQuery.min.js" >
-</script>
+        <div class="column">
+            <button class="codeknop" onclick="Tonen()">Toon code!</button>
+        </div>
+        <div class="column">
+            <h2>Code</h2>
+            <div>
+                <p>&lt;form action=""&gt</p>
+            </div>
+            <div>
+            <p id="resultaat"></p>
+<!--        <textarea id="resultaat" rows="63" cols="60"></textarea>-->
+            </div>
+            <div>
+                <p>&lt;/form&gt</p>
+            </div>
+<!--        <div>-->
+<!--            <button class="btn" onclick="Reset()">Reset</button>-->
+<!--&lt;!&ndash;            <button class="btn" onclick="Reset()">Reset</button>&ndash;&gt;-->
+<!--        </div>-->
+        </div>
+    </main>
+    <script src="JS/jquery.min.js" ></script>
 <!--altijd eerst jQuery en dan pas de zelfgeschreven scripts, volgorde is belangrijk!!-->
-<script src="js/index.js">  </script>
+    <script src="JS/index.js"></script>
 </body>
 </html>
