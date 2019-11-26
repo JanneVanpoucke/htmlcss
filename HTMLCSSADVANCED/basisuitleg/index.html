@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Stappenplan Bootstrap</title>
+</head>
+<body>
+<h1>containers</h1>
+<h2>containers met row en col</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">              <!--col-12 is niet nodig. vanaf het punt 'sm' gaan we het scherm in 6 kolommen breken-->
+            <p>Dit is een vaste container van bootstrap</p>
+            <p>In mobiel gebruik ik de volledige breedte van de container</p>
+            <p>Vanaf groter dan 576px (sm-breedte)neem ik de helft van het scherm in-vanaf sm neem ik 6 kolommen op het scherm</p>
+        </div>
+        <div class="col-12 col-sm-6">
+            <p>Dit is een vaste container van bootstrap</p>
+            <p>In mobiel gebruik ik de volledige breedte van de container</p>
+            <p>Vanaf groter dan 576px (sm-breedte)neem ik de helft van het scherm in - vanaf sm neem ik 6 kolommen op het scherm</p>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6"><!--col-12 is eigenlijk niet nodig, het is automatisch 12 kolommen. vanaf het punt 'sm' gaan we het scherm in 6 kolommen breken-->
+            <p>Dit is een fluid container van bootstrap</p>
+            <p>In mobiel gebruik ik de volledige breedte van de container</p>
+            <p>Vanaf groter dan 576px (sm-breedte)neem ik de helft van het scherm in-vanaf sm neem ik 6 kolommen op het scherm</p>
+        </div>
+        <div class="col-12 col-sm-6">
+            <p>Dit is een fluid container van bootstrap</p>
+            <p>In mobiel gebruik ik de volledige breedte van de container</p>
+            <p>Vanaf groter dan 576px (sm-breedte)neem ik de helft van het scherm in - vanaf sm neem ik 6 kolommen op het scherm</p>
+        </div>
+    </div>
+</div>
+<h2>containers met flexbox</h2>
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

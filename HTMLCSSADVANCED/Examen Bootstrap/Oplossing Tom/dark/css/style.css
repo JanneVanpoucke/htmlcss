@@ -1,0 +1,291 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background: #282a2e;
+    color: white;
+}
+
+.navbar-brand > h1 {
+    font-size: unset;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+.navbar-dark .navbar-toggler:focus {
+    outline: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #97c248;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: unset;
+    line-height: 20px;
+}
+.carousel-caption > h2 {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0;
+}
+.carousel-caption > p {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+h2 {
+    font-weight: 300;
+}
+
+
+.circle {
+    height: 101px;
+    width: 101px;
+    background: #313338;
+    border-radius: 50%;
+    position: relative;
+}
+.circle > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ANIMATIONS */
+.service:nth-child(1) .circle:hover > img {
+    animation: page 3s;
+}
+
+@keyframes page {
+
+    2% {
+        left: -200%;
+        top: 50%;
+    }
+
+    20% {
+        left: -200%;
+    }
+
+    25% {
+        left: -150%;
+    }
+    40% {
+        left: -150%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -150%;
+    }
+
+    80% {
+        left: -200%;
+        opacity: 1;
+    }
+    81% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    
+}
+
+.service:nth-child(2) .circle:hover > img {
+    animation: phone 0.3s;
+    animation-iteration-count: 2;
+}
+
+@keyframes phone {
+
+    25% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(-20deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+    
+}
+
+.service:nth-child(3) .circle:hover > img {
+    animation: trashcan 1s;
+}
+
+@keyframes trashcan {
+
+    25% {
+        transform: translate(-50%, -50%) rotate(-135deg);
+    }
+
+    30% {
+        left: 60%;
+        top: 40%;
+    }
+    40% {
+        left: 40%;
+        top: 60%;
+    }
+    60% {
+        left: 60%;
+        top: 40%;
+    }
+    80% {
+        left: 40%;
+        top: 60%;
+        transform: translate(-50%, -50%) rotate(-135deg);
+    }
+    
+}
+
+.service:nth-child(4) .circle:hover > img {
+    animation: camera 0.2s;
+}
+
+@keyframes camera {
+
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(2);
+    }
+    
+}
+
+h3 {
+    margin-top: 23px;
+    margin-bottom: 19px;
+    font-weight: 300;
+    font-size: 24px;
+}
+#services p {
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.jumbotron {
+    background: #4b3f34;
+    padding: 147px 0;
+}
+
+.buttons button {
+    border: none;
+    width: 131px;
+    height: 43px;
+}
+
+.buttons button:first-child {
+    background: #b0cd3b;
+    box-shadow: 0px 6px 0px #798f21, 0px 3px 15px rgba(0,0,0,.4);
+}
+.buttons button:first-child:active {
+    background: #b0cd3b !important;
+}
+.buttons button:first-child:active:focus {
+    box-shadow: 0px 2px 0px #798f21, 0px 3px 15px rgba(0,0,0,.4) !important;
+}
+.buttons button:last-child {
+    background: #1bbc9d;
+    margin-left: 9px;
+    box-shadow: 0px 6px 0px #1f937d, 0px 3px 15px rgba(0,0,0,.4);
+}
+.buttons button:last-child:active {
+    background: #1bbc9d !important;
+}
+.buttons button:last-child:active:focus {
+    box-shadow: 0px 2px 0px #1f937d, 0px 3px 15px rgba(0,0,0,.4) !important;
+}
+
+
+#portfolio .nav-item {
+    margin-bottom: 6px;
+}
+
+#portfolio .nav-item > a {
+    padding: 0;
+    line-height: 32px;
+    height: 32px;
+    width: 104px;
+    border-radius: 0;
+    background: #313338;
+    color: white;
+    font-size: 14px;
+}
+#portfolio .nav-item:not(:last-child) {
+    margin-right: 6px;
+}
+#portfolio .nav-item > a.active {
+    background: #1bbc9d;
+    box-shadow: 0px 3px 0px #1f937d;
+}
+
+.item {
+    background: #313337;
+    height: 225px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.item > .inner {
+    opacity: 0;
+    visibility: hidden;
+    background: #232323;
+    height: 100%;
+    padding: 25px;
+    margin-top: 100px;
+
+    transition: all 0.3s;
+}
+
+.item > .inner > h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.item:hover > .inner {
+    opacity: 1;
+    visibility: visible;
+    margin-top: unset;
+}
+.item:hover > .inner i {
+    cursor: pointer;
+}
+
+
+/* PC Versie */
+@media (min-width: 992px) {
+    .navbar {
+        height: 115px;
+    }
+
+    .nav-item:not(:last-child) {
+        margin-right: 41px;
+    }
+}

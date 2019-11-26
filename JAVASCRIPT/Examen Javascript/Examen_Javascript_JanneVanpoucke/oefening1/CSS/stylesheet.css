@@ -1,0 +1,81 @@
+/**BEGIN GENERAL CLASSES**/
+*{
+  box-sizing: border-box;
+}
+.d-flex{
+  display:flex;
+}
+.flex-column{
+  flex-direction:column;
+}
+.flex-row{
+  flex-direction:row;
+}
+/*centreren van children binnen de parent*/
+.justify-content-end{
+  justify-content:flex-end;
+}
+.justify-content-center{
+  justify-content:center;
+}
+.justify-content-between{
+  justify-content:space-between;
+}
+.justify-content-around{
+  justify-content:space-around;
+}
+.flex-wrap{
+  flex-wrap:wrap;
+}
+.flex-nowrap{
+  flex-wrap:nowrap;
+}
+.flex-grow-1{
+  flex-grow: 1;
+}
+/*children centreren zichzelf tov de parent*/
+.align-items-center{
+  align-items:center;
+}
+
+.w-25{
+  width:25%;
+}
+.w-50{
+  width:50%;
+}
+.w-75{
+  width:75%;
+}
+.w-100{
+  width:100%;
+}
+
+/*- Typography -*/
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+.capital{
+   text-transform: capitalize;
+}
+.inline-p {
+display: inline;
+}
+.bullet{
+/*  display: list-item;
+  list-style-position: inside;*/
+}
+.red{
+
+}
+.bold{
+}
+.btn1{
+
+}
+.btn2{
+
+}

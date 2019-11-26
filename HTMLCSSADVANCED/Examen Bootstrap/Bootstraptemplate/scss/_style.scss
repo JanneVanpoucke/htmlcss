@@ -1,0 +1,109 @@
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: #282a2e;
+}
+.navbar-brand{
+  padding-left: 30px;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .navbar{
+    height: 112px;
+  }
+  #brand{
+    font-size: 1rem;
+  }
+  .nav-link {
+    color: #fff !important;
+    font-size: 0.6667rem;
+    &:hover{
+      color: #97c248 !important;
+    }
+  }
+
+  .fa{
+    font-size: 15px !important;
+  }
+  .navbar-brand{
+    padding-left: 126px;
+    padding-right: 12px;
+    margin-right: 236px;
+  }
+  .navbar-nav {
+    margin-right: 131px;
+  }
+  .nav-item{
+    padding-right: 43px
+  }
+  .carousel-caption{
+
+  }
+  #carouselExampleIndicators{
+    height: 588px;
+  }
+  #afdruk1{
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  #afdruk2{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  #afdruk3{
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  #afdruk4{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  #afdruk5{
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  #afdruk6{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .carousel-caption{
+    margin-bottom: 200px;
+  }
+  #blok3{
+    height:440px;
+    background: #282a2e;
+  }
+  #services{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #fff !important;
+  }
+  .tekst{
+    color: #fff !important;
+  }
+  .title{
+    color: #fff !important;
+  }
+}
+
+
